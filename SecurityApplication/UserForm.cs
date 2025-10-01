@@ -7,10 +7,6 @@ namespace SecurityApplication
 	{
 		private readonly Storage.UserStorage _storage = new();
 		private UserViewModel _user;
-		// Здесь мы читаем политики из AdminForm если нужно - но поскольку политики у нас локальны в AdminForm,
-		// мы не можем напрямую их достать. Делаю упрощение: при смене пароля пользователь учитывает локальные проверки:
-		// если админ включил правило до того как юзер сменил пароль, это правило в текущей версии хранится в AdminForm.Memory.
-		// Для рабочего прототипа — будем просто проверять минимальную длину 4.
 		public UserForm(UserViewModel user)
 		{
 			_user = user;

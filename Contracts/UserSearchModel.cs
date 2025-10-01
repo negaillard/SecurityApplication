@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Contracts
+﻿namespace Contracts
 {
 	public class UserSearchModel
 	{
@@ -15,6 +9,6 @@ namespace Contracts
 
 		public bool? isBlocked { get; set; }
 		public bool? isPasswordDifficult { get; set; }
-		public int? PasswordMinLength {  get; set; }
+		public int? PasswordMinLength { get; set; }
 	}
 }

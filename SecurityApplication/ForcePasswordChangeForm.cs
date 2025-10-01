@@ -1,16 +1,5 @@
 ﻿using Contracts;
 using Contracts.Crypto;
-using Storage;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace SecurityApplication
 {
@@ -22,7 +11,7 @@ namespace SecurityApplication
 		public ForcePasswordChangeForm(UserViewModel user)
 		{
 			_user = user;
-			InitializeComponent();	
+			InitializeComponent();
 		}
 
 		private void btnChange_Click(object sender, EventArgs e)

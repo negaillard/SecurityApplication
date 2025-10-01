@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Contracts
+﻿namespace Contracts
 {
 	public interface IUserModel
 	{
@@ -15,8 +9,7 @@ namespace Contracts
 		bool isBlocked { get; }
 		bool isPasswordDifficult { get; }
 		int PasswordMinLength { get; }
-		int PasswordLifetimeMonths { get;  }
-		DateTime LastPasswordChange { get;  }
-
+		int PasswordLifetimeMonths { get; }
+		DateTime LastPasswordChange { get; }
 	}
 }

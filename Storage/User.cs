@@ -1,10 +1,4 @@
 ﻿using Contracts;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml.Linq;
 
 namespace Storage
@@ -15,8 +9,8 @@ namespace Storage
 		public string Login { get; set; } = string.Empty;
 		public string Password { get; set; } = string.Empty;
 		public bool isAdmin { get; set; }
-		public bool isBlocked {  get; set; }
-		public bool isPasswordDifficult {  get; set; }
+		public bool isBlocked { get; set; }
+		public bool isPasswordDifficult { get; set; }
 		public int PasswordMinLength { get; set; }
 		public int PasswordLifetimeMonths { get; set; }
 		public DateTime LastPasswordChange { get; set; }
@@ -98,6 +92,6 @@ namespace Storage
 			PasswordLifetimeMonths = PasswordLifetimeMonths,
 			LastPasswordChange = LastPasswordChange,
 			PasswordMinLength = PasswordMinLength,
-		};		
+		};
 	}
 }
